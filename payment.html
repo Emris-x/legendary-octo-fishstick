@@ -1,68 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=\"en\">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Pay - Payment Instructions</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset=\"UTF-8\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">
+  <meta name=\"theme-color\" content=\"#c00\">
+  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">
+  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black-translucent\">
+  <link rel=\"manifest\" href=\"manifest.json\">
+  <link rel=\"apple-touch-icon\" href=\"images/hero-bg.jpg\">
+  <title>Campus Pay - Payment Details</title>
+  <link rel=\"stylesheet\" href=\"styles.css\">
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#how-it-works">How It Works</a></li>
-                <li><a href="index.html#pricing">Pricing</a></li>
-                <li><a href="form.html">Form</a></li>
-                <li><a href="terms.html">Terms</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class=\"page-loading\">
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class=\"logo\">Campus<span style=\"background: linear-gradient(135deg, #dc2626, #b91c1c); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;\">Pay</span></div>
+      <ul class=\"nav-menu\">
+        <li><a href=\"index.html\" class=\"nav-link\">Home</a></li>
+        <li><a href=\"index.html#how-it-works\" class=\"nav-link\">How It Works</a></li>
+        <li><a href=\"index.html#pricing\" class=\"nav-link\">Pricing</a></li>
+        <li><a href=\"form.html\" class=\"nav-link\">Form</a></li>
+        <li><a href=\"terms.html\" class=\"nav-link\">Terms</a></li>
+        <li><a href=\"index.html#contact\" class=\"nav-link\">Contact</a></li>
+      </ul>
+      <div class=\"hamburger\">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
-    <section class="payment-section">
-        <h2>Payment Instructions</h2>
-        
-        <div class="bank-details">
-            <h3>Transfer to:</h3>
-            <p><strong>Bank:</strong> Opay</p>
-            <p><strong>Account Name:</strong> Echefu Emmanuel Ebuka</p>
-            <p><strong>Account Number:</strong> 8169502325</p>
+  <main>
+    <section class=\"payment-section\">
+      <div class=\"container\">
+        <div class=\"section-header\">
+          <h1>Payment Instructions</h1>
+          <p>Complete transfer below, then send proof instantly</p>
         </div>
 
-        <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; margin: 2rem 0;">
-            <h3 style="color: var(--red);">Important Instructions:</h3>
-            <ul style="color: var(--white); line-height: 1.8;">
-                <li><strong>Ensure your FULL NAME is included in the payment reference/narrative.</strong></li>
-                <li>Service fees are <strong>non-refundable</strong>.</li>
-                <li>After payment, send proof immediately.</li>
-                <li>Include: Name, Service Type, Courses, Amount Paid.</li>
-            </ul>
+        <!-- Bank Details - Prominent Card -->
+        <div class=\"bank-details-card\">
+          <div style=\"font-size: 3rem; color: var(--red-primary); margin-bottom: 1.5rem;\">
+            🏦
+          </div>
+          <h2>Bank Transfer Details</h2>
+          <div class=\"bank-info-group\">
+            <div class=\"bank-info\">
+              <strong>Bank:</strong> <span>Opay</span>
+            </div>
+            <div class=\"bank-info\">
+              <strong>Account Name:</strong> <span>Echefu Emmanuel Ebuka</span>
+            </div>
+            <div class=\"bank-info\" style=\"font-size: 2rem; font-weight: 800; color: var(--red-primary);\">
+              <strong>Account Number:</strong> <span>8169502325</span>
+            </div>
+          </div>
         </div>
 
-        <a href="https://wa.me/2348169502325?text=Hi%20Campus%20Pay%2C%0A%0AName%3A%20%5BYOUR%20FULL%20NAME%5D%0AService%3A%20%5BSCHOOL%20FEE%20%7C%20COURSE%20REG%20%7C%20TRANSCRIPT%5D%0ACourses%3A%20%5BLIST%20COURSES%5D%0AAmount%20Paid%3A%20₦%5BAMOUNT%5D%0A%0ATransaction%20ID%3A%20%5BPayment%20Proof%20Attached%5D%0A%0AThank%20you!" 
-           target="_blank" 
-           rel="noopener noreferrer"
-           class="whatsapp-btn">
-            <i class="fab fa-whatsapp"></i> Send Payment Proof via WhatsApp
-        </a>
-
-        <div style="text-align: center; margin-top: 3rem;">
-            <a href="index.html" class="cta-btn">Back to Home</a>
+        <!-- Critical Instructions -->
+        <div class=\"instruction-card glass-effect\">
+          <h3><i class=\"fas fa-exclamation-triangle\" style=\"color: var(--red-accent);\"></i> Important Instructions</h3>
+          <ul style=\"list-style: none; padding: 0;\">
+            <li style=\"padding: 1rem; border-left: 4px solid var(--red-primary); background: rgba(255,255,255,0.02); margin-bottom: 1rem; border-radius: 0 10px 10px 0;\">
+              <strong>Payment Reference:</strong> Include your <strong>FULL NAME</strong> exactly as in form
+            </li>
+            <li style=\"padding: 1rem; border-left: 4px solid var(--red-primary); background: rgba(255,255,255,0.02); margin-bottom: 1rem; border-radius: 0 10px 10px 0;\">
+              Service fees are <strong>non-refundable</strong> once processed
+            </li>
+            <li style=\"padding: 1rem; border-left: 4px solid var(--whatsapp-green); background: rgba(37,211,102,0.05); margin-bottom: 1rem; border-radius: 0 10px 10px 0;\">
+              <strong>Next: Send proof immediately after payment</strong>
+            </li>
+          </ul>
         </div>
+
+        <!-- One-Tap WhatsApp Proof -->
+        <div style=\"text-align: center; margin: clamp(3rem, 8vw, 5rem) 0;\">
+          <a href=\"#\" onclick=\"sendWhatsApp()\" class=\"whatsapp-btn btn-large\" rel=\"noopener noreferrer\" style=\"font-size: 1.25rem;\">
+            <i class=\"fab fa-whatsapp\" style=\"font-size: 1.5rem;\"></i>
+            📱 Send Payment Proof (1-Tap)
+          </a>
+          <p style=\"color: var(--gray-600); margin-top: 1.5rem; font-size: 1.1rem;\">
+            Message auto-fills your details. Just attach screenshot.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <div style=\"display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 4rem;\">
+          <a href=\"form.html\" class=\"btn-primary\">← Back to Form</a>
+          <a href=\"index.html\" class=\"btn-secondary\">Home</a>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-links">
-            <a href="terms.html">Terms & Conditions</a>
-            <a href="https://wa.me/2348169502325" rel="noopener noreferrer">WhatsApp</a>
-        </div>
-        <p>&copy; 2024 Emris Technology. All rights reserved.</p>
-    </footer>
+  <footer>
+    <div class=\"container\">
+      <div class=\"footer-links\">
+        <a href=\"terms.html\">Terms & Conditions</a>
+        <a href=\"https://wa.me/2348169502325\" rel=\"noopener noreferrer\">WhatsApp</a>
+      </div>
+      <p>&copy; 2024 Emris Technology. Licensed Payment Service.</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src=\"script.js\"></script>
 </body>
 </html>
 

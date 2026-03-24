@@ -1,24 +1,24 @@
-# Campus Pay Website Implementation TODO
+# Campus Pay PWA Upgrade TODO
 
-## Approved Plan Steps (to be completed step-by-step):
+## Current Progress (Original): 8/8 ✅ Live at https://emris-x.github.io/legendary-octo-fishstick/
 
-1. ✅ **Create TODO.md** - Track progress.
+## New Refactor Plan Steps:
 
-2. ✅ **Update styles.css** - Implement black/red/white theme, mobile-first responsive design, new classes (hero, steps, pricing-table, problems-grid, buttons, footer, terms-box).
+1. ✅ **PWA Files** - manifest.json (fixed), sw.js (cache/offline), junk cleanup.
 
-3. ✅ **Update index.html** - Landing page: Fix nav to multi-page links, enhance hero, detailed 5-step how-it-works with icons, 4 problems grid, pricing table, FAQ accordion, footer.
+2. **styles.css** - Full mobile-first (480/768/1024px+), hamburger menu, fintech cards/gradients/shadows, animations, relative units, touch 48px+ buttons, clamp fonts.
 
-4. ✅ **Create form.html** - Google Form embed page with intro, submit link to payment.html.
+3. **script.js** - Hamburger toggle, PWA install prompt, lazy load, form validation/loading, page transitions.
 
-5. ✅ **Create payment.html** - Bank details (Opay, Echefu Emmanuel Ebuka, 8169502325), instructions, WhatsApp proof button with prefill.
+4. **Update all HTML** - Add <link rel=\"manifest\"> <script>if('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js')</script>, hamburger nav structure, lazy imgs loading=\"lazy\", meta apple-touch, no input zoom (font-size:16px).
 
-6. ✅ **Create terms.html** - Full T&C text in styled scrollable box.
+5. **Perf/UI tweaks** - Inline critical CSS? Image opt.
 
-7. ✅ **Update script.js** - Add WhatsApp prefill logic, optional amount calc, nav enhancements, FAQ toggle.
+6. **Test & Lighthouse** - Audit 90+ PWA/perf/accessibility.
 
-8. **Test & Demo** - Check responsiveness, provide run command.
+7. **Redeploy** - git add/commit/push gh-pages.
 
-## Progress: 7/8 completed.
+Progress: 1/7
 
-**Next step:** Final testing and completion.
+Next: styles.css upgrade.
 

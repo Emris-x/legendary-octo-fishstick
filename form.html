@@ -1,57 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=\"en\">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Pay - Payment Form</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset=\"UTF-8\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, viewport-fit=cover\">
+  <meta name=\"theme-color\" content=\"#c00\">
+  <meta name=\"apple-mobile-web-app-capable\" content=\"yes\">
+  <meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black-translucent\">
+  <link rel=\"manifest\" href=\"manifest.json\">
+  <link rel=\"apple-touch-icon\" href=\"images/hero-bg.jpg\">
+  <title>Campus Pay - Payment Form</title>
+  <link rel=\"stylesheet\" href=\"styles.css\">
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#how-it-works">How It Works</a></li>
-                <li><a href="index.html#pricing">Pricing</a></li>
-                <li><a href="form.html">Form</a></li>
-                <li><a href="terms.html">Terms</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class=\"page-loading\">
+  <!-- Header (same as index) -->
+  <header>
+    <nav>
+      <div class=\"logo\">Campus<span style=\"background: linear-gradient(135deg, #dc2626, #b91c1c); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;\">Pay</span></div>
+      <ul class=\"nav-menu\">
+        <li><a href=\"index.html\" class=\"nav-link\">Home</a></li>
+        <li><a href=\"index.html#how-it-works\" class=\"nav-link\">How It Works</a></li>
+        <li><a href=\"index.html#pricing\" class=\"nav-link\">Pricing</a></li>
+        <li><a href=\"#form\" class=\"nav-link\">Form</a></li>
+        <li><a href=\"terms.html\" class=\"nav-link\">Terms</a></li>
+        <li><a href=\"index.html#contact\" class=\"nav-link\">Contact</a></li>
+      </ul>
+      <div class=\"hamburger\">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
-    <section class="form-section">
-        <div class="form-intro">
-            <h2>Welcome to Campus Pay!</h2>
-            <p>Fill this form to start your payment process. After submitting, you will be redirected to the payment page.</p>
-            <a href="payment.html" class="cta-btn" style="display: inline-block; margin-top: 1rem;">After Form: Go to Payment</a>
+  <main>
+    <section class=\"form-section\">
+      <div class=\"container\">
+        <div class=\"section-header\">
+          <h1>Payment Assistance Form</h1>
+          <p>Fill this quick form (30 seconds). Get instant payment instructions.</p>
+        </div>
+        
+        <div class=\"form-intro card glass-effect\">
+          <h2>👋 Welcome to Campus Pay</h2>
+          <p>Complete details below. After submission, you'll see exact bank details and WhatsApp proof link.</p>
+          <div class=\"form-buttons\">
+            <a href=\"payment.html\" class=\"btn-primary\">View Payment Instructions →</a>
+          </div>
         </div>
 
-        <!-- Google Form Embed -->
-        <div class="google-form-embed-container">
-            <iframe 
-                src="https://forms.gle/WMR84f2ThL9bRCzH9?embedded=true" 
-                class="google-form-embed" 
-                title="Campus Pay Student Details Form">
-            </iframe>
+        <!-- Google Form Embed - Full responsive -->
+        <div class=\"google-form-container\">
+          <iframe 
+            src=\"https://forms.gle/WMR84f2ThL9bRCzH9?embedded=true\" 
+            class=\"google-form-embed\" 
+            title=\"Campus Pay - Student Payment Form\"
+            loading=\"lazy\">
+          </iframe>
         </div>
 
-        <div style="text-align: center; margin-top: 2rem;">
-            <p>After submission, <a href="payment.html" class="cta-btn">Proceed to Payment Instructions</a></p>
+        <div class=\"form-cta\">
+          <p style=\"text-align: center; color: var(--gray-600); margin-top: 2rem;\">
+            Form submitted? <a href=\"payment.html\" class=\"btn-primary\">→ Complete Payment</a>
+          </p>
         </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-links">
-            <a href="terms.html">Terms & Conditions</a>
-            <a href="https://wa.me/2348169502325" rel="noopener noreferrer">WhatsApp</a>
-        </div>
-        <p>&copy; 2024 Emris Technology. All rights reserved.</p>
-    </footer>
+  <footer>
+    <div class=\"container\">
+      <div class=\"footer-links\">
+        <a href=\"terms.html\">Terms & Conditions</a>
+        <a href=\"https://wa.me/2348169502325\" rel=\"noopener noreferrer\">WhatsApp</a>
+      </div>
+      <p>&copy; 2024 Emris Technology. Licensed Payment Service Provider.</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src=\"script.js\"></script>
 </body>
 </html>
 
