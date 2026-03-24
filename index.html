@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Pay - Fast, Secure Student Payment Assistance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="form.html">Proceed to Form</a></li>
+                <li><a href="terms.html">Terms</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Campus Pay</h1>
+        <p>Fast, Secure Student Payment Assistance by Emris Technology</p>
+        <button class="cta-btn" onclick="window.location.href='form.html'">Proceed to Payment Form</button>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="steps-container">
+        <h2>How Campus Pay Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-icon">📝</div>
+                <h3>1. Fill the Form</h3>
+                <p>Complete our simple online form with your payment details.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">📱</div>
+                <h3>2. Get Instructions</h3>
+                <p>Receive clear payment instructions instantly.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">💳</div>
+                <h3>3. Make Payment</h3>
+                <p>Transfer to our verified account details.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">📤</div>
+                <h3>4. Send Proof</h3>
+                <p>Forward payment proof via WhatsApp.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon">✅</div>
+                <h3>5. Get Verified</h3>
+                <p>We verify and process your request promptly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems Students Face -->
+    <section id="problems" class="problems-section">
+        <h2>Problems Students Face</h2>
+        <div class="problems-grid">
+            <div class="problem-card">
+                <div class="problem-icon">⏳</div>
+                <h3>Long Queues & Waiting</h3>
+                <p>Hours wasted in banking halls and payment lines.</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">❓</div>
+                <h3>Confusing Processes</h3>
+                <p>Unclear payment procedures and requirements.</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">🐌</div>
+                <h3>Slow Confirmation</h3>
+                <p>Delayed verification and processing times.</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">🚫</div>
+                <h3>Lack of Guidance</h3>
+                <p>No clear instructions or support available.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>School Fee Payment</td>
+                        <td class="price">₦2,000</td>
+                    </tr>
+                    <tr>
+                        <td>Course Registration</td>
+                        <td class="price">₦500 per course</td>
+                    </tr>
+                    <tr>
+                        <td>Transcript Processing</td>
+                        <td class="price">₦500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- FAQ/Testimonials -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>How fast is verification? <i class="fas fa-chevron-down"></i></h3>
+                <div class="faq-answer">
+                    <p>Most payments are verified within 30 minutes during business hours.</p>
+                </div>
+            </div>
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>Is the service fee refundable? <i class="fas fa-chevron-down"></i></h3>
+                <div class="faq-answer">
+                    <p>Service fees are non-refundable once processing begins.</p>
+                </div>
+            </div>
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>What if I make a wrong payment? <i class="fas fa-chevron-down"></i></h3>
+                <div class="faq-answer">
+                    <p>Contact us immediately via WhatsApp with proof for assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to get started? <a href="form.html" class="cta-btn">Fill Form Now</a></p>
+        <p>Or message us directly: <a href="https://wa.me/2348169502325" target="_blank" class="whatsapp-btn">WhatsApp Support</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="terms.html">Terms & Conditions</a>
+            <a href="https://wa.me/2348169502325">WhatsApp</a>
+            <a href="mailto:info@emristech.com">Email</a>
+        </div>
+        <p>&copy; 2024 Emris Technology. All rights reserved. | Campus Pay - Simplifying Student Payments</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
